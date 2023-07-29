@@ -1,0 +1,100 @@
+1.键盘录入两个数据，返回两个数中的较大值
+
+
+package day05_zuoye;
+
+import java.util.Scanner;
+
+public class Text01 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        Compare(n1,n2);
+    }
+    public static void Compare(int n1 , int n2){
+        System.out.println("最大值为："+(n1 > n2 ? n1 : n2));
+    }
+}
+
+2.键盘录入两个数据，比较两个数是否相等
+
+package day05_zuoye;
+
+import java.util.Scanner;
+
+public class Test2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        IsEquals(n1,n2);
+
+    }
+    public static void IsEquals(int n1 , int n2) {
+
+        System.out.println(n1 == n2 ? "相同" : "不相同");
+
+    }
+}
+
+
+3.键盘录入三个数据，返回三个数中的最大值
+
+package day05_zuoye;
+
+import java.util.Scanner;
+
+public class Test3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int n3 = sc.nextInt();
+        FindMax(n1,n2,n3);
+    }
+    public static void FindMax(int n1, int n2 , int n3){
+        System.out.println("最大值为：" + (n3> (n1 > n2 ? n1 : n2) ? n3 : (n1 > n2 ? n1 : n2)));
+    }
+}
+
+
+4.键盘录入行数和列数，输出对应的星形
+package day05_zuoye;
+
+import java.util.Scanner;
+
+public class Test4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        Build(n1,n2);
+    }
+    public static void Build(int n1,int n2){
+        for(int i =1 ; i <= n1 ; i++ ){
+            for(int j=1; j<= n2 ; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+
+5.键盘录入一个数据n(1<=n<=9)，输出对应的nn乘法表
+package day05;
+
+public class Test5{
+    public static void main(String[] args) {
+    	method();
+    }
+    public static void method(){
+for( int i = 1 ; i < 10 ; i ++ ){
+        for(int  j= 1; j<= i ; j ++){
+            System.out.print(j + "*"+i+"="+ (i*j) + "\t");
+        }System.out.println();
+        }
+	}
+}
